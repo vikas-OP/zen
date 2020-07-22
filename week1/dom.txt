@@ -1,0 +1,19 @@
+			DOM
+	
+	Document Object Model is object oriented representation
+of the HTML document. HTML elements are the objects, they 
+are represented in a tree structure. A web page can be viewed 
+in a browser and also can be viewed as HTML source code, but
+the document is same in both the cases. Similarly, DOM is also
+a representation of the web page in tree structure so that
+it can be manipulated by a scripting language such as JS.
+
+	DOM is a tree structure with node and child elements
+so that the search time of particular HTML elements is low
+which inturn increases the performance in terms of creating, 
+deleting and modifying elements. This structure starts with 
+window for which only child is html. There are two children
+of html which are head and body. There are several children 
+of head and body. This hierarchical structure also enables 
+the advantage of inheritance.
+ 
