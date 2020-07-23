@@ -1,0 +1,19 @@
+		HTTP 1.1 vs HTTP 2
+
+	HTTP 2 is built on HTTP 1.1. So the limitations of 
+HTTP 1.1 are addressed with HTTP 2.
+1. HOL - Head of line blocking - earlier only one TCP connection
+was there between client and server, further it is increased to
+6 parellel TCP connections. But still the performance is not
+good as many requests need to be made. In HTTP 2 only one 
+secure TCP connection is established (HTTPs is  mandatory for
+HTTP 2), in which streams are created and HTTP requests are
+sent as stream frames. The requests do not get blocked in 
+HTTP 2 as in HTTP 1.1
+2. Repetition of header data: With every HTTP request header 
+data is sent in HTTP 1.1. But in HTTP2, it is not the case. 
+Even header data can be compressed in HTTP 2, in HTTP 1.1
+header data is not compressed.
+3. PUSH: In HTTP 2, server can give PUSH frames, which are
+mandatory additional resources for the web page that are
+sent ahead with the HTTP request.
