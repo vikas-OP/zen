@@ -1,0 +1,17 @@
+		WHY SEMANTIC ELEMENTS
+
+	HTML was originally created as a markup language to
+share documents on the internet in the early days. It was only
+used for scientific purposes. Now-a-days, people use web for
+other things as well. So, designing attractive web pages has 
+begun. Programmers used many hacks and non-semantic elements
+to group the elements such as div. HTML 5 is relatively new 
+and new semantic elements such as <header>, <footer>, <aside>,
+<article>, <section>, <nav> are added. They deliver different
+advantages. They describe their meaning in human and machine
+readable way. They have great accessibility. For example, 
+screen readers can better describe the web pages when semantic 
+elements are used. This can help people with sight impairment.
+Other advantage is consistent code. Now programmers for 
+designing navigation bar can use <nav> instead of <div class
+= "nav">, <div id = "navigate"> etc..
