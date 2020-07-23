@@ -1,0 +1,16 @@
+		GET   vs  POST
+
+	GET is used to fetch data from server. The parameters 
+are given in the url. For example, www.abc.com?param=value.
+There is a limit on maximum url length. GET requests can be 
+cached and bookmarked. It is a safe method which means it has
+no effect on the server data. This method should not be used
+when sensitive data is involved. GET method is idempotent which 
+means how many times it is requested the outcome will not change.
+
+	POST is used to create data and update in the resources.
+The parameters are given in the body. There is no limit on url 
+length. The POST request data is not cached or bookmarked. 
+It is an unsafe method which means the server data can be 
+changed using this method. This method is not idempotent which means
+for every other request the outcome will be different.
