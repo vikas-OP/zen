@@ -1,0 +1,34 @@
+                        OBJECTS AND INTERNAL REPRESENTATION
+
+    Objects represents real world things in programming terms. For example, we can create
+    an object for student. It will have certain properties and methods.
+    For example, 
+    var student = {
+        'name' : 'vikas',
+        'year' : 2,
+    }
+    Here object is student with two properties. We can add functions to the objects 
+    such as getCGPA(), setAttendance() etc...
+    Objects contain key value pairs. Keys are of type strings and values can be of any type
+    . values can be numbers, strings, arrays, functions or even other objects. Even if we use any datatype as a key javascript will convert it into string datatype. 
+
+    For example, student.1 = "something";, then the student object is
+
+
+        var student = {
+            'name' : 'vikas',
+            'year' : 2,
+            '1'  : 'something'
+        };
+
+        The properties of an object can be accessed in two ways, by using dot notation or by using bracket notation.
+
+        For example, to access name of the student object,
+        student.name or student["name"].
+
+        To change any property in an object we can do, 
+        student.name = "mahesh" or 
+        student["name"] = "mahesh"
+
+        All the keys (properties, fields) can be extracted and can be placed in an array by
+        using Object.keys(student). Same way all the values can also be extracted. 
