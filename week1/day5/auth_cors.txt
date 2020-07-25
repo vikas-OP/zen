@@ -1,0 +1,10 @@
+                        Auth and CORS
+
+Auth stands for authentication, there are many types of authentication such as
+OAuth, API key etc...
+
+CORS - Cross Origin Resource Sharing 
+
+    This is a standard that adds to HTTPS headers that let servers describe which origins
+    are allowed to read the information from web browser. Some HTTP methods can cause side effects to the server, this standard preflight the request, and check with the approved methods from the server. Upon approval from the server, actual request can be sent.
+
