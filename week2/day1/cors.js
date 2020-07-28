@@ -6,6 +6,6 @@ request.open("GET", url_string, true);
 request.send();
 request.onload = function () {
   // Begin accessing JSON data here
-  var data = JSON.parse(this.response);
+  var data = JSON.parse(this.responseText);
   console.log(data);
 };
