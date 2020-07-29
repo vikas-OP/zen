@@ -1,0 +1,44 @@
+                            Rendering web page
+
+    The first steps are parsing HTML and parsing CSS. Then a render tree is created from them. The objects in the render tree are laid out on the screen and they are painted. This is the flow.
+
+    Parsing:
+    - It is not straight forward, it is very forgiving. Even if we don't follow proper syntax, it doesn't break the web page. 
+
+    Parsing flow:
+    The elements are taken and are parsed. Tokenization happens. The opening tag and the tag name and the closing tag are detected and a start token is made. Like this for all the elements tokens are formed from which parse tree is created.
+    From the parse tree DOM tree is created.
+
+    Parsing of HTML can be stopped:
+        If there are script tags, inline CSS etc... parsing of HTML is stopped to fetch the resources or to execute the code. After completion of this, the parsing gets resumed. It makes the web page slow to get rendered.
+
+    Speculative parsing: 
+        It will look ahead for images, resources etc... and fetches them beforehand so they don't interupt parsing.
+    
+    CSSOM : CSS object model is created from css rules, selectors and styles.
+
+    Render tree: From DOM and CSSOM render tree is created. Actually four trees. Any elements in head, script, title tags do not make it render tree. Also the html elements with visibility hidden are not taken in render tree.
+
+    - Render objects
+    - Render styles
+    - Render layers
+    - Line boxes
+
+    Render Objects: This contains the DOM node and information about the elements. visual output, geometrical information, style and computed metrics.
+    Render Styles: Styles to be applied to the DOM elements, this sort of information is stored in this tree.
+    Render Layers: Information like z-index, absolute, relative position values are stored here.
+    Line boxes: Information for laying out text like text wrapping are stored in this tree.
+
+    Layout: 
+    It is a recursive process. It traverses the render tree and takes node's position and styles and first lays out the children before laying out the parents. There are two types of layout which are incrimental layout and immediate layout.
+
+    Painting: Takes all the info from the four render trees and paints. It creates layers, it is an incremental process and can go up to 12 phases.
+    It produces a bitmap of different layers and sends to the GPU of the machine which paints the screen.
+
+    Performance Insights:
+
+    1. Always place the script tags at the end of the html. It results in faster loading and rendering. If there is script tag in middle of the document the parsing has to be stopped and execute the script resulting in more render time.
+
+    2. Make all the DOM changes in one go. Do not read and write multiple times. Do the read operations in one go and write operations in one go. Because everytime we write the layout needs to be changed and for the next read operation it takes time to get the information.
+
+    3. Use Inline CSS for critical elements. It speeds up the paint time.
