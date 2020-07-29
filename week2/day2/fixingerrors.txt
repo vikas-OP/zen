@@ -1,0 +1,49 @@
+                                FIX THE ERRORS
+
+Uncaught type error: cannot read property
+    This error occurs in Chrome when a variable which is not defined is tried to be accessed. To fix This
+    if(foo != undefined){
+        operation;
+    }
+
+TypeError: undefined is not an object
+    This error occurs in Safari when a variable or method is not defined is tried to access.
+    This is equivalent to the above error. To fix it,
+    if(foo != undefined){
+        operation;
+    }
+
+TypeError: null is not an object
+    This error occurs in Safari when a variable or method is null and tried to be accessed.
+    This happens when we get variables in JS from DOM. When the DOM is not loaded yet, if we tried to access them they return null values. If we do operations on them this error occurs. To fix it, we need to add eventListeners. When the eventListener is fired the init() can use the DOM elements.
+
+Unknown: Script error
+    This error occurs when the errors in JS are not caught and window.onerror() catches them. It happens due to CORS policy. When tried to access the data from cross origin. This can be fixed, by modifying the headers in the server like
+    Cross-Origin-Allow-Access : "*";
+
+TypeError: Object doesn't support property
+    When an undefined function is called, this error occurs.
+    To fix this, we need to first declare and define the function and invoke it later.
+
+TypeError: Undefined is not a function
+    This is same as above error and fix is also the same, This occurs in Chrome and Firefox while the above one occurs in IE.
+
+UncaughtRangeError: Maximum Call Stack reached
+    This error occurs when a recursive function is called and there is no terminating condition. This can also be occurred if a function is called with parameter value out of the range. For example, if the range is 1 to 100 and we call func(1000) this error might occur. To fix this, we need to take care of the above mentioned things.
+
+TypeError: cannot read property 'length'
+    When length property is tried to be accessed of an undefined variable.
+    To fix it, define the variable or check for type before calling .length.
+
+Uncaught TypeError: cannot set property
+    When we try to write into variable which is undefined.
+    for example, foo = {};
+    console.log(foo.bar); // undefined
+    foo.bar.a = 5; // this error occurs.
+    To fix this error, before setting the property check for undefined
+    if(foo.bar != undefined){
+        code
+    } 
+
+Reference Error: event is not defined
+    When a variable is not defined but is tried to access. To fix this, check for undefined condition.
