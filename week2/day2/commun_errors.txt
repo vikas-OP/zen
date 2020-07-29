@@ -1,0 +1,43 @@
+                    COMMUNICATION ERRORS
+                Different communication errors are 
+    1. Invalid URL/POST data.
+    2. Server response status
+    3. No network connection.
+    4. Server response content.
+
+
+    Invalid URL/POST data - Generally the strings are way too long in this case, missing one to few characters can result in error.
+
+    To avoid this type of error, make sure -
+    1. every character in url is correct and format is right.
+    2. to use encodeURlcomponent() not encodeURl().
+    3. The parameters are named correctly.
+
+
+    Server response status - Different status codes are returned in case of success and failure.
+    status code 200 is success, beware of status code 304, which means the content is not modified, technically a success.
+    The readyState should be four. These need to checked. All the remaining status codes are because of errors.
+
+    request.onreadystatechange = function(){
+        if(request.readyState === 4){
+            if((request.status >= 200 && request.status < 300) || request.status == 304){
+                //execute
+            }
+            else{
+                //handle error
+            }
+        }
+    }
+
+
+    No network connection - This error happens when we tried to open() the connection. IE throws an error immediately, but firefox fails silently and throws an error when we try to access the response properties. To handle this error
+
+    try{
+        request.open('GET', url, true);
+    }
+    catch(ex){
+        //handle
+    }
+
+
+    Server response content - The errors are not only returned in the status code but are also return the HTML. So look out for status codes 500.
