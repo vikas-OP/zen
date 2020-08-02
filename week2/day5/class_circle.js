@@ -8,7 +8,7 @@ class Circle {
   set_color = (color) => (this.color = color);
   to_string = () =>
     `this is a circle of radius ${this.radius}cm and is in ${this.color} color`;
-  get_area = () => Math.pi * this.radius * this.radius;
+  get_area = () => Math.PI * this.radius * this.radius;
 }
 let circ1 = new Circle();
 console.log(circ1.to_string());
