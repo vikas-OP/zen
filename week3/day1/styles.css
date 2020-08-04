@@ -1,0 +1,42 @@
+h2 {
+  background: rgb(225, 0, 0);
+  color: white;
+  margin-top: 0px;
+}
+body {
+  background: lightyellow;
+}
+.ast {
+  color: red;
+}
+.check {
+  width: 20px;
+  height: 10px;
+}
+td {
+  float: left;
+}
+.blue {
+  color: blue;
+}
+table {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 100vw;
+}
+label {
+  font-weight: bold;
+}
+h4 {
+  display: inline;
+}
+button {
+  background: blue;
+  color: white;
+  position: relative;
+  left: 40%;
+}
+div {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
