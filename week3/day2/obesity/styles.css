@@ -1,0 +1,208 @@
+.container {
+  width: 60vw;
+  margin: auto;
+  background: #22223b;
+  padding: 2% 6%;
+}
+body {
+  color: white;
+}
+p {
+  text-align: center;
+}
+.head {
+  height: 35vh;
+}
+.second {
+  height: 65vh;
+  background: orange;
+}
+.secondone,
+.secondtwo,
+.fifthone,
+.fifthtwo {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 65vh;
+}
+.fifthtwo {
+  background: orange;
+}
+.secondtwo {
+  background: #118ab2;
+}
+.third {
+  height: 40vh;
+  background: #ef233c;
+  margin-top: 5%;
+}
+.fourth {
+  height: 50vh;
+  background: #118ab2;
+  margin-top: 5%;
+}
+.fifth,
+.eight {
+  height: 60vh;
+  margin-top: 5%;
+}
+.fifthone {
+  background: #ef233c;
+}
+.sixth,
+.seventh {
+  height: 35vh;
+  margin-top: 5%;
+  background: #118ab2;
+}
+.sixth {
+  margin-top: 10%;
+}
+.sixthone,
+.seventhone {
+  height: 35vh;
+  width: 75%;
+  float: left;
+}
+.sixthtwo,
+.seventhtwo {
+  height: 35vh;
+  width: 25%;
+  float: left;
+}
+.seventh {
+  background: orange;
+}
+.eightone {
+  float: left;
+  width: 50%;
+  height: 60vh;
+  background: #118ab2;
+}
+.eighttwo {
+  float: left;
+  width: 50%;
+  height: 60vh;
+  background: #ef233c;
+}
+.eight {
+  margin-bottom: 7%;
+}
+.logo {
+  width: 20%;
+  height: 35vh;
+  margin-left: 18%;
+  float: left;
+}
+.mainicon {
+  font-size: 3em;
+  background: lightskyblue;
+  border: white 4px solid;
+  border-radius: 50%;
+  padding: 20%;
+  margin-top: 15%;
+  color: black;
+}
+.mainhead {
+  color: #ef233c;
+  font-weight: bolder;
+  font-size: 3em;
+}
+.submainhead {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.secondicon {
+  font-size: 2em;
+  padding-top: 5%;
+  padding-left: 5%;
+  color: black;
+}
+.secondiconfirst {
+  padding-left: 33%;
+}
+.colored {
+  color: #ef233c;
+}
+.secondp {
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.boldest {
+  font-weight: bolder;
+  font-size: 3.5em;
+}
+.normal {
+  font-weight: normal;
+}
+.bolder {
+  font-weight: bolder;
+  font-size: 1.75em;
+  padding-left: 5%;
+}
+.bold {
+  font-weight: bold;
+}
+.block {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+}
+.thirdone,
+.thirdtwo {
+  float: left;
+  width: 50%;
+  height: 15vh;
+  color: white;
+}
+.icon2 {
+  color: black;
+}
+.icon3 {
+  color: black;
+  font-size: 2em;
+  padding-left: 18%;
+  padding-bottom: 10%;
+}
+.thirdtwotext {
+  padding-left: 15%;
+}
+.thirdthree {
+  float: left;
+  width: 100%;
+  height: 20vh;
+}
+.thirdthreetext {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.fourthone,
+.fourthtwo {
+  float: left;
+  width: 50%;
+  height: 50vh;
+}
+.icon4 {
+  font-size: 3em;
+  color: orange;
+}
+.icon5 {
+  color: #ef233c;
+  padding-left: 5%;
+}
+.icon6 {
+  font-size: 4rem;
+  padding-top: 20%;
+  color: black;
+}
+.icon7 {
+  padding-left: 15%;
+  color: #ef233c;
+}
+.icon8 {
+  color: black;
+}
