@@ -1,0 +1,289 @@
+* {
+  font-family: "Spectral SC", serif;
+}
+.whole {
+  width: 80vw;
+  height: 7500px;
+  background: #011638;
+  margin: auto;
+  border-radius: 80px;
+  outline: 5px dotted white;
+  outline-offset: -80px;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid black;
+}
+.mainhead {
+  z-index: 1;
+  position: relative;
+  font-weight: bolder;
+  color: white;
+  top: 0.5%;
+  left: 33%;
+  width: 290px;
+  background: rgb(1, 22, 56);
+  padding: 10px 20px;
+  font-size: 2rem;
+}
+.icon1 {
+  color: orange;
+}
+.containers {
+  height: 800px;
+  position: relative;
+  top: -2%;
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+.one {
+  color: #ffcdb2;
+  font-size: 2.5em;
+}
+.headforsec {
+  font-size: 2.5em;
+}
+.two,
+.nine {
+  background: #eee1b3;
+}
+.four {
+  background: #fc7a57;
+}
+.seven {
+  position: relative;
+  top: -3%;
+  color: #e5989b;
+  font-size: 0.65em;
+}
+.five,
+.eight {
+  background: #9a7197;
+}
+.five {
+  position: relative;
+  top: -3%;
+}
+.eight {
+  position: relative;
+  top: -3%;
+}
+.nine {
+  position: relative;
+  top: -4%;
+}
+.six {
+  background: #92dce5;
+  position: relative;
+  top: -4%;
+}
+.footer {
+  background: #81ae9d;
+  z-index: 3;
+  position: relative;
+  top: -4%;
+}
+p {
+  z-index: 5;
+  transform: rotate(5deg);
+  position: relative;
+  top: 10%;
+  left: 13%;
+}
+.biggest {
+  font-size: 4em;
+}
+.three {
+  color: #ffcdb2;
+}
+.icon-mouse {
+  transform: rotate(5deg);
+  position: relative;
+  left: 45%;
+  font-size: 2em;
+}
+.longshort {
+  position: relative;
+  top: -1%;
+}
+.longscroll {
+  font-size: 2.2em;
+}
+.visual {
+  position: relative;
+  top: -2%;
+}
+.twonormal {
+  font-size: 1.3em;
+  padding-right: 50px;
+  position: relative;
+  top: -3%;
+}
+.storytelling {
+  position: relative;
+  left: 35%;
+}
+.threenormal {
+  position: relative;
+  left: 35%;
+}
+.fournormal {
+  position: relative;
+}
+.punchy {
+  position: relative;
+  left: 26%;
+  color: white;
+}
+.fivenormal {
+  position: relative;
+  left: 40%;
+  color: white;
+}
+.sixnormal {
+  position: relative;
+  left: 20%;
+}
+.bigger {
+  font-size: 1.3em;
+}
+.sevennormal {
+  font-size: 1.3em;
+  position: relative;
+  top: 15%;
+  left: 25%;
+}
+.eightnormal {
+  position: relative;
+  top: 3%;
+  left: 25%;
+}
+.awkward {
+  position: relative;
+  left: 22%;
+}
+.ninenormal {
+  position: relative;
+  top: -3%;
+  left: 35%;
+}
+.footerone {
+  width: 70%;
+  height: 50%;
+  float: left;
+}
+.footertwo {
+  width: 30%;
+  height: 50%;
+  float: left;
+}
+.footerfinal {
+  height: 50%;
+  width: 100%;
+  float: left;
+}
+.footeronenormal {
+  position: relative;
+  left: 8%;
+}
+.footertwonormal {
+  position: relative;
+  font-size: 1.3em;
+  top: 20%;
+  left: 2%;
+}
+.icon2 {
+  color: black;
+}
+.footerfinalnormal {
+  position: relative;
+  left: 0%;
+  background: white;
+}
+.two {
+  background: linear-gradient(
+      to right,
+      rgba(238, 225, 179, 0.75),
+      rgba(238, 225, 179, 0.55)
+    ),
+    url("pexels-nick-collins-1293120.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.three {
+  background: linear-gradient(
+      to left,
+      rgba(1, 22, 56, 0.65),
+      rgba(1, 22, 56, 0.45)
+    ),
+    url("pexels-buenosia-carol-2123437.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: -3%;
+}
+.four {
+  position: relative;
+  top: -4%;
+  background: linear-gradient(rgba(252, 122, 87, 0.7), rgba(252, 122, 87, 0.6)),
+    url("pexels-cottonbro-3661194.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.five {
+  position: relative;
+  top: -5%;
+  background: linear-gradient(
+      rgba(154, 113, 151, 0.75),
+      rgba(154, 114, 151, 0.55)
+    ),
+    url("pexels-kaboompics-com-6190.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.six {
+  position: relative;
+  top: -6%;
+  background: linear-gradient(
+      rgba(146, 220, 229, 0.55),
+      rgba(146, 220, 229, 0.45)
+    ),
+    url("pexels-oleg-magni-1040499.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.seven {
+  position: relative;
+  top: -7%;
+  background-size: cover;
+  background: linear-gradient(rgba(1, 22, 56, 0.9), rgba(1, 22, 56, 0.7)),
+    url("pexels-engin-akyurt-2092075.jpg");
+}
+.eight {
+  position: relative;
+  top: -8%;
+  background: linear-gradient(
+      to right,
+      rgba(154, 113, 151, 0.9),
+      rgba(154, 114, 151, 0.8)
+    ),
+    url("pexels-tyler-lastovich-699122.jpg");
+  background-size: cover;
+  color: black;
+}
+.nine {
+  position: relative;
+  top: -9%;
+  background: linear-gradient(
+      to right,
+      rgba(238, 225, 179, 0.75),
+      rgba(238, 225, 179, 0.55)
+    ),
+    url("pexels-negative-space-48605.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.footer {
+  position: relative;
+  top: -10%;
+}
