@@ -1,0 +1,57 @@
+.whole {
+  background: #fff1e6;
+  width: 60vw;
+  min-height: 80vh;
+  margin: 50px auto;
+}
+.form-block {
+  min-height: 60vh;
+  width: 80%;
+  margin: 10px auto;
+  padding: 30px 10px;
+}
+.input-block {
+  height: 50px;
+  padding: 15px;
+}
+.labels {
+  float: left;
+  height: 50px;
+  width: 40%;
+}
+.input-area {
+  float: left;
+  height: 50px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  width: 60%;
+}
+.submit-block {
+  padding-left: 42%;
+  padding-top: 10px;
+}
+.submit-btn {
+  background: lightskyblue;
+  border-radius: 5px;
+  height: 30px;
+  width: 80px;
+}
+i {
+  font-size: 1.5em;
+  float: left;
+  color: grey;
+  background: black;
+  width: 10%;
+}
+.input-box {
+  height: 28px;
+  width: 280px;
+  float: left;
+  width: 80%;
+}
+.select-box {
+  height: 28px;
+  width: 280px;
+  float: left;
+  width: 83%;
+}

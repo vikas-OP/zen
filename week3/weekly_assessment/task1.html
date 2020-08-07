@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="task1.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="whole">
+      <div class="form-block">
+        <form onsubmit="submitFunc()">
+          <div class="input-block">
+            <div class="labels">
+              <label for="full-name">Full Name</label>
+            </div>
+            <div class="input-area">
+              <i class="fas fa-id-badge" style="font-size: 1.75em;"></i>
+              <input
+                type="text"
+                id="full-name"
+                placeholder="full name"
+                class="input-box"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-block">
+            <div class="labels">
+              <label for="address-1">Address Line 1</label>
+            </div>
+            <div class="input-area">
+              <i class="fas fa-address-card"></i>
+              <input
+                type="text"
+                id="address-1"
+                placeholder="Address Line 1"
+                class="input-box"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-block">
+            <div class="labels">
+              <label for="address-2">Address Line 2</label>
+            </div>
+            <div class="input-area">
+              <i class="fas fa-address-card"></i>
+              <input
+                type="text"
+                id="address-2"
+                placeholder="Address Line 2"
+                class="input-box"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-block">
+            <div class="labels">
+              <label for="city">City</label>
+            </div>
+            <div class="input-area">
+              <i class="fas fa-city"></i>
+              <input
+                type="text"
+                id="city"
+                placeholder="City"
+                class="input-box"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-block">
+            <div class="labels">
+              <label for="state">State/Province/Region</label>
+            </div>
+            <div class="input-area">
+              <i class="fas fa-location-arrow"></i>
+              <input
+                type="text"
+                id="state"
+                placeholder="State/Province/Region"
+                class="input-box"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-block">
+            <div class="labels">
+              <label for="zip">Postal Code/ZIP</label>
+            </div>
+            <div class="input-area">
+              <i class="fas fa-envelope-open"></i>
+              <input
+                type="text"
+                id="zip"
+                placeholder="Postal Code/ZIP"
+                class="input-box"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-block">
+            <div class="labels">
+              <label for="country">Country</label>
+            </div>
+            <div class="input-area">
+              <i class="fas fa-map"></i>
+              <select class="select-box" id="country" required>
+                <option value="AF">Afghanistan</option>
+                <option value="PK">Pakistan</option>
+                <option value="IN" selected>India</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-block">
+            <div class="labels">
+              <label for="mail">Email</label>
+            </div>
+            <div class="input-area">
+              <i class="fas fa-envelope-square"></i>
+              <input
+                type="text"
+                id="mail"
+                placeholder="Email"
+                class="input-box"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-block">
+            <div class="labels">
+              <label for="phone">Email</label>
+            </div>
+            <div class="input-area">
+              <i class="fas fa-id-badge" style="font-size: 1.75em;"></i>
+              <input
+                type="number"
+                id="phone"
+                placeholder="Phone number"
+                class="input-box"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-block submit-block">
+            <input type="submit" class="submit-btn" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      function submitFunc() {
+        alert("Thanks for submitting!");
+      }
+    </script>
+  </body>
+</html>
