@@ -1,0 +1,360 @@
+let intro_div = document.createElement("div");
+intro_div.setAttribute("class", "intro");
+let img_div = document.createElement("div");
+img_div.setAttribute("class", "image");
+let main_image = document.createElement("img");
+main_image.setAttribute("src", "./pexels-kaique-rocha-36675.jpg");
+main_image.setAttribute("height", "80%");
+main_image.setAttribute("width", "20%");
+main_image.setAttribute("class", "img");
+img_div.appendChild(main_image);
+let name_div = document.createElement("div");
+name_div.setAttribute("class", "name");
+let name_head = document.createElement("h1");
+name_head.innerText = "BADUGU VIKAS";
+name_div.appendChild(name_head);
+let blank_div = document.createElement("div");
+blank_div.setAttribute("class", "blank");
+intro_div.append(img_div, name_div, blank_div);
+document.body.appendChild(intro_div);
+let info_div = document.createElement("div");
+info_div.setAttribute("class", "info");
+let info_content = document.createElement("h2");
+info_content.innerText =
+  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur illum,beatae provident fugit minus facilis pariatur";
+let line = document.createElement("hr");
+info_div.append(info_content, line);
+document.body.append(info_div);
+let left_side_div = document.createElement("div");
+left_side_div.setAttribute("class", "side first");
+let p1 = document.createElement("p");
+p1.setAttribute("class", "head");
+let i1 = document.createElement("i");
+i1.setAttribute("class", "fas fa-user icon");
+p1.append(i1);
+let str = "Profile";
+p1.append(str);
+let p2 = document.createElement("p");
+p2.innerText =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit.Obcaecati impedit, vitae nostrum reprehenderit rem ipsam minus possimus! Atque,tempore dolorem!";
+let p3 = document.createElement("p");
+p3.setAttribute("class", "head");
+let i2 = document.createElement("i");
+i2.setAttribute("class", "fas fa-flask icon");
+p3.append(i2);
+str = "Skills";
+p3.append(str);
+let p4 = document.createElement("p");
+p4.setAttribute("class", "sub");
+p4.innerText = "Technical Skills";
+let tech_div1 = document.createElement("div");
+tech_div1.setAttribute("class", "techn");
+let l1 = document.createElement("label");
+l1.setAttribute("class", "tech");
+l1.setAttribute("for", "JS");
+l1.innerText = "Javascript";
+let in1 = document.createElement("input");
+in1.setAttribute("type", "range");
+in1.setAttribute("id", "JS");
+in1.setAttribute("name", "JS");
+in1.setAttribute("min", "0");
+in1.setAttribute("max", "100");
+in1.setAttribute("value", "75");
+in1.setAttribute("disabled", "true");
+let tech_div2 = document.createElement("div");
+tech_div2.setAttribute("class", "techn");
+let l2 = document.createElement("label");
+l2.setAttribute("class", "tech");
+l2.setAttribute("for", "css");
+l2.innerText = "CSS";
+let in2 = document.createElement("input");
+in2.setAttribute("type", "range");
+in2.setAttribute("id", "css");
+in2.setAttribute("name", "css");
+in2.setAttribute("min", "0");
+in2.setAttribute("max", "100");
+in2.setAttribute("value", "75");
+in2.setAttribute("disabled", "true");
+let tech_div3 = document.createElement("div");
+tech_div3.setAttribute("class", "techn");
+let l3 = document.createElement("label");
+l3.setAttribute("class", "tech");
+l3.setAttribute("for", "html");
+l3.innerText = "HTML";
+let in3 = document.createElement("input");
+in3.setAttribute("type", "range");
+in3.setAttribute("id", "html");
+in3.setAttribute("name", "html");
+in3.setAttribute("min", "0");
+in3.setAttribute("max", "100");
+in3.setAttribute("value", "75");
+in3.setAttribute("disabled", "true");
+let tech_div4 = document.createElement("div");
+tech_div4.setAttribute("class", "techn");
+let l4 = document.createElement("label");
+l4.setAttribute("class", "tech");
+l4.setAttribute("for", "react");
+l4.innerText = "React";
+let in4 = document.createElement("input");
+in4.setAttribute("type", "range");
+in4.setAttribute("id", "react");
+in4.setAttribute("name", "react");
+in4.setAttribute("min", "0");
+in4.setAttribute("max", "100");
+in4.setAttribute("value", "20");
+in4.setAttribute("disabled", "true");
+let tech_div5 = document.createElement("div");
+tech_div5.setAttribute("class", "techn");
+let l5 = document.createElement("label");
+l5.setAttribute("class", "tech");
+l5.setAttribute("for", "redux");
+l5.innerText = "Redux";
+let in5 = document.createElement("input");
+in5.setAttribute("type", "range");
+in5.setAttribute("id", "JS");
+in5.setAttribute("name", "JS");
+in5.setAttribute("min", "0");
+in5.setAttribute("max", "100");
+in5.setAttribute("value", "25");
+in5.setAttribute("disabled", "true");
+let tech_div6 = document.createElement("div");
+tech_div6.setAttribute("class", "techn");
+let l6 = document.createElement("label");
+l6.setAttribute("class", "tech");
+l6.setAttribute("for", "mongo");
+l6.innerText = "MongoDB";
+let in6 = document.createElement("input");
+in6.setAttribute("type", "range");
+in6.setAttribute("id", "mongo");
+in6.setAttribute("name", "mongo");
+in6.setAttribute("min", "0");
+in6.setAttribute("max", "100");
+in6.setAttribute("value", "50");
+in6.setAttribute("disabled", "true");
+let tech_div7 = document.createElement("div");
+tech_div7.setAttribute("class", "techn");
+let l7 = document.createElement("label");
+l7.setAttribute("class", "tech");
+l7.setAttribute("for", "deploy");
+l7.innerText = "Deployment";
+let in7 = document.createElement("input");
+in7.setAttribute("type", "range");
+in7.setAttribute("id", "deploy");
+in7.setAttribute("name", "deploy");
+in7.setAttribute("min", "0");
+in7.setAttribute("max", "100");
+in7.setAttribute("value", "40");
+in7.setAttribute("disabled", "true");
+p5 = document.createElement("p");
+p5.setAttribute("class", "sub");
+p5.innerText = "Additional Skills";
+let add_div1 = document.createElement("div");
+add_div1.setAttribute("class", "add");
+let l8 = document.createElement("label");
+l8.setAttribute("class", "addi");
+l8.setAttribute("for", "PM");
+l8.innerText = "Project Management";
+let in8 = document.createElement("input");
+in8.setAttribute("type", "range");
+in8.setAttribute("id", "PM");
+in8.setAttribute("name", "PM");
+in8.setAttribute("min", "0");
+in8.setAttribute("max", "100");
+in8.setAttribute("value", "75");
+in8.setAttribute("disabled", "true");
+let add_div2 = document.createElement("div");
+add_div2.setAttribute("class", "add");
+let l9 = document.createElement("label");
+l9.setAttribute("class", "addi");
+l9.setAttribute("for", "R");
+l9.innerText = "Recruitment";
+let in9 = document.createElement("input");
+in9.setAttribute("type", "range");
+in9.setAttribute("id", "R");
+in9.setAttribute("name", "R");
+in9.setAttribute("min", "0");
+in9.setAttribute("max", "100");
+in9.setAttribute("value", "90");
+in9.setAttribute("disabled", "true");
+let add_div3 = document.createElement("div");
+add_div3.setAttribute("class", "add");
+let l10 = document.createElement("label");
+l10.setAttribute("class", "addi");
+l10.setAttribute("for", "BD");
+l10.innerText = "Business Deployment";
+let in10 = document.createElement("input");
+in10.setAttribute("type", "range");
+in10.setAttribute("id", "BD");
+in10.setAttribute("name", "BD");
+in10.setAttribute("min", "0");
+in10.setAttribute("max", "100");
+in10.setAttribute("value", "47");
+in10.setAttribute("disabled", "true");
+let add_div4 = document.createElement("div");
+add_div4.setAttribute("class", "add");
+let l11 = document.createElement("label");
+l11.setAttribute("class", "addi");
+l11.setAttribute("for", "E");
+l11.innerText = "Editing";
+let in11 = document.createElement("input");
+in11.setAttribute("type", "range");
+in11.setAttribute("id", "E");
+in11.setAttribute("name", "E");
+in11.setAttribute("min", "0");
+in11.setAttribute("max", "100");
+in11.setAttribute("value", "25");
+in11.setAttribute("disabled", "true");
+let add_div5 = document.createElement("div");
+add_div5.setAttribute("class", "add");
+let l12 = document.createElement("label");
+l12.setAttribute("class", "addi");
+l12.setAttribute("for", "FR");
+l12.innerText = "Fund Raising";
+let in12 = document.createElement("input");
+in12.setAttribute("type", "range");
+in12.setAttribute("id", "FR");
+in12.setAttribute("name", "FR");
+in12.setAttribute("min", "0");
+in12.setAttribute("max", "100");
+in12.setAttribute("value", "60");
+in12.setAttribute("disabled", "true");
+let p6 = document.createElement("p");
+p6.setAttribute("class", "head");
+let i3 = document.createElement("i");
+i3.setAttribute("class", "fas fa-briefcase icon");
+str = " Work Experience";
+p6.append(i3, str);
+let p7 = document.createElement("p");
+p7.setAttribute("class", "sub");
+p7.setAttribute("style", "text-align:left;");
+p7.innerText = "Event Manager";
+let ul1 = document.createElement("ul");
+let li1 = document.createElement("li");
+let li2 = document.createElement("li");
+let li12 = document.createElement("li");
+let p8 = document.createElement("p");
+let p9 = document.createElement("p");
+let p24 = document.createElement("p");
+p8.innerText =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quosaspernatur eos harum ullam deleniti officia est nisi, magnicupiditate dolorem vero corporis debitis reiciendis consectetur moditenetur, sit repellendus ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, ullam quod nobis dignissimos debitis quis.";
+p9.innerText =
+  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor cum,fugit animi odio labore id quidem.Vel veniam obcaecati iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit.";
+p24.innerText =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima pariatur quisquam officiis iusto expedita quibusdam, autem repellat beatae unde inventore quidem, distinctio error tempore minus nemo provident qui magni libero?";
+let right_side_div = document.createElement("div");
+right_side_div.setAttribute("class", "side");
+let p10 = document.createElement("p");
+p10.setAttribute("class", "head");
+let i4 = document.createElement("i");
+i4.setAttribute("class", "fas fa-briefcase icon");
+str = " Work Experience";
+let p11 = document.createElement("p");
+p11.setAttribute("class", "sub");
+p11.setAttribute("style", "text-align:left;");
+p11.innerText = "Community Relations Manager";
+let ul2 = document.createElement("ul");
+let li3 = document.createElement("li");
+let li4 = document.createElement("li");
+let li5 = document.createElement("li");
+let p12 = document.createElement("p");
+let p13 = document.createElement("p");
+let p14 = document.createElement("p");
+p12.innerText =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatumveritatis sint modi recusandae repudiandae eius sit natus minuseaque ? Iure iste, nulla neque quam repudiandae veritatis, minima,temporibus velit molestias quibusdam totam est.Non, laboriosamsequi unde ut quisquam dicta accusantium, voluptas mollitia pariaturvoluptate soluta, voluptates quos illo minus ?";
+p13.innerText =
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, etillum.Dicta facere deserunt temporibus rem voluptas maximeconsequatur, perspiciatis pariatur.Optio temporibus doloremqueillum, obcaecati eligendi autem vel voluptate.";
+p14.innerText =
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Providentaliquid fugit consequatur asperiores pariatur nobis officiisdelectus atque deleniti repellendus voluptatibus adipisci teneturmagnam fuga praesentium mollitia quos quas, incidunt minima animi etcupiditate eveniet.";
+let p15 = document.createElement("p");
+p15.setAttribute("class", "head");
+let i5 = document.createElement("i");
+i5.setAttribute("class", "fas fa-graduation-cap icon");
+str = " Education";
+let p16 = document.createElement("p");
+p16.setAttribute("class", "sub");
+p16.setAttribute("style", "text-align:left;");
+p16.innerText = "B. Tech., ECE";
+let ul3 = document.createElement("ul");
+let li6 = document.createElement("li");
+let li7 = document.createElement("li");
+let li8 = document.createElement("li");
+let p17 = document.createElement("p");
+let p18 = document.createElement("p");
+let p19 = document.createElement("p");
+p17.innerText =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis sint modi recusandae repudiandae eius sit natus minus eaque ? Iure iste, nulla neque quam repudiandae veritatis, minima, temporibus velit molestias quibusdam totam est.Non, laboriosam sequi unde ut quisquam dicta accusantium, voluptas mollitia pariatur voluptate soluta, voluptates quos illo minus ?";
+p18.innerText =
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, et illum.Dicta facere deserunt temporibus rem voluptas maxime consequatur, perspiciatis pariatur.Optio temporibus doloremque illum, obcaecati eligendi autem vel voluptate.";
+p19.innerText =
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident aliquid fugit consequatur asperiores pariatur nobis officiis delectus atque deleniti repellendus voluptatibus adipisci tenetur magnam fuga praesentium mollitia quos quas, incidunt minima animi etcupiditate eveniet.";
+let p23 = document.createElement("p");
+p23.setAttribute("class", "sub");
+p23.setAttribute("style", "text-align: left;");
+p23.innerText = "MERN Stack";
+let ul4 = document.createElement("ul");
+let li9 = document.createElement("li");
+let li10 = document.createElement("li");
+let li11 = document.createElement("li");
+let p20 = document.createElement("p");
+let p21 = document.createElement("p");
+let p22 = document.createElement("p");
+p20.innerText =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia incidunt ea doloribus eveniet quidem totam ? Blanditiis temporibus maxime aut error.";
+p21.innerText =
+  " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, vel!";
+p22.innerText =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudianda enemo dolorum, totam vero iusto doloremque!";
+li9.append(p20);
+li10.append(p21);
+li11.append(p22);
+ul4.append(li9, li10, li11);
+li6.append(p17);
+li7.append(p18);
+li8.append(p19);
+ul3.append(li6, li7, li8);
+p15.append(i5, str);
+li3.append(p12);
+li4.append(p13);
+li5.append(p14);
+li12.append(p24);
+ul2.append(li3, li4, li5);
+p10.append(i4, str);
+right_side_div.append(p10, p11, ul2, p15, p16, ul3, p23, ul4);
+li1.append(p8);
+li2.append(p9);
+ul1.append(li1, li2, li12);
+tech_div1.append(l1, in1);
+tech_div2.append(l2, in2);
+tech_div3.append(l2, in3);
+tech_div4.append(l4, in4);
+tech_div5.append(l5, in5);
+tech_div6.append(l6, in6);
+tech_div7.append(l7, in7);
+add_div1.append(l8, in8);
+add_div2.append(l9, in9);
+add_div3.append(l10, in10);
+add_div4.append(l11, in11);
+add_div5.append(l12, in12);
+left_side_div.append(
+  p1,
+  p2,
+  p3,
+  p4,
+  tech_div1,
+  tech_div2,
+  tech_div3,
+  tech_div4,
+  tech_div5,
+  tech_div6,
+  tech_div7,
+  p5,
+  add_div1,
+  add_div2,
+  add_div3,
+  add_div4,
+  add_div5,
+  p6,
+  p7,
+  ul1
+);
+document.body.append(left_side_div, right_side_div);
