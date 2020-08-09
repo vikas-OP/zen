@@ -1,0 +1,65 @@
+body {
+  background: black;
+}
+.calc-space {
+  min-height: 60px;
+  width: 40vw;
+  border: 1px blue solid;
+  color: white;
+  margin: 5% 30%;
+  margin-bottom: 3%;
+}
+.calc-disp {
+  text-align: right;
+  padding-top: 1%;
+  font-size: 1.4em;
+  padding-right: 10px;
+}
+.numbers-ops {
+  display: flex;
+  height: 35vh;
+  width: 35%;
+  margin-left: 32.5%;
+}
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 100%;
+}
+.digits {
+  color: blue;
+  border: 1.5px blue solid;
+  width: 28%;
+  height: 33%;
+  background: black;
+}
+.ops {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  height: 100%;
+}
+.opes {
+  color: red;
+  border: 1.5px red solid;
+  width: 50%;
+  height: 33%;
+  background: black;
+}
+.equals {
+  color: green;
+  border: 1.5px green solid;
+}
+.digits:hover {
+  background: blue;
+  color: white;
+}
+.opes:hover {
+  background: red;
+  color: white;
+}
+.equals:hover {
+  background: green;
+  color: white;
+}
