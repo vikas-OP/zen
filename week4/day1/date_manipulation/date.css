@@ -1,0 +1,16 @@
+.main {
+  min-height: 300px;
+  width: 60%;
+  margin-left: 18%;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+input {
+  width: 10%;
+}
+.gen {
+  margin-left: 42%;
+}
