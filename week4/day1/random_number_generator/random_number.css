@@ -1,0 +1,21 @@
+body {
+  background: #e5989b;
+}
+header {
+  background: #6d6875;
+}
+.result-space {
+  background: #f4f1de;
+  height: 80px;
+  width: 50vw;
+  margin-left: 23%;
+  border-radius: 20px;
+}
+.number-place {
+  color: #03045e;
+}
+.btnn {
+  margin-left: 38%;
+  width: 20%;
+  height: 60px;
+}
