@@ -1,0 +1,21 @@
+.container {
+  min-height: 50vh;
+  width: 60vw;
+  margin: 20px auto;
+}
+.form {
+  background: #eae2b7;
+}
+input,
+select {
+  background: #f8edeb;
+  border-radius: 10px;
+  width: 100%;
+}
+table {
+  margin-top: 20px;
+  margin-left: 18%;
+}
+td {
+  width: 30%;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <script>
+      function something() {
+        let food = document.querySelectorAll(".food");
+        let foodItems = [];
+        food.forEach((item) => {
+          if (item.checked) {
+            foodItems.push(item.value);
+          }
+        });
+        if (foodItems.length < 2) {
+          alert("Please select atleast two food choices!");
+          return;
+        }
+        sessionStorage.setItem("food", foodItems);
+        let fname = document.querySelector("#fname").value;
+        sessionStorage.setItem("fname", fname);
+        let lname = document.querySelector("#lname").value;
+        sessionStorage.setItem("lname", lname);
+        let address = document.querySelector("#address").value;
+        sessionStorage.setItem("address", address);
+        let pincode = document.querySelector("#pincode").value;
+        sessionStorage.setItem("pincode", pincode);
+        let gender = document.querySelector("#gender").value;
+        sessionStorage.setItem("gender", gender);
+        let state = document.querySelector("#state").value;
+        sessionStorage.setItem("state", state);
+        let country = document.querySelector("#country").value;
+        sessionStorage.setItem("country", country);
+      }
+      function paint() {
+        document.querySelector(
+          ".tablefname"
+        ).innerHTML = sessionStorage.getItem("fname");
+        document.querySelector(
+          ".tablelname"
+        ).innerHTML = sessionStorage.getItem("lname");
+        document.querySelector(
+          ".tableaddress"
+        ).innerHTML = sessionStorage.getItem("address");
+        document.querySelector(
+          ".tablepincode"
+        ).innerHTML = sessionStorage.getItem("pincode");
+        document.querySelector(
+          ".tablegender"
+        ).innerHTML = sessionStorage.getItem("gender");
+        document.querySelector(".tablefood").innerHTML = sessionStorage.getItem(
+          "food"
+        );
+        document.querySelector(
+          ".tablestate"
+        ).innerHTML = sessionStorage.getItem("state");
+        document.querySelector(
+          ".tablecountry"
+        ).innerHTML = sessionStorage.getItem("country");
+      }
+      paint();
+    </script>
+  </body>
+</html>
