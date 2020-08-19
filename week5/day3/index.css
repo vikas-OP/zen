@@ -1,0 +1,22 @@
+body {
+  background: #003049;
+}
+.bodycard {
+  background: linear-gradient(to right, #3494e6, #ec6ead);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.imgs {
+  width: 85%;
+  height: 30vh;
+  margin-left: 7.5%;
+  margin-bottom: 15px;
+}
+.textcard {
+  width: 100%;
+}
+.btns {
+  margin-top: 10px;
+}
