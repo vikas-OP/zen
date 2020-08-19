@@ -1,0 +1,25 @@
+body {
+  background: #003049;
+}
+.whole {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  background: #003049;
+}
+.custom_card {
+  width: 40vw;
+  height: 100vh;
+  background: #ffcdb2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.img-class {
+  width: 38vw;
+  height: 55vh;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
