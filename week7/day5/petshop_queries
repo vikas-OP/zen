@@ -1,0 +1,220 @@
+inserting into staff collection
+--------------------------------------
+db.staff.insertMany(
+    [
+        {
+            name: "Amy",
+            mobile: 9701274894,
+            email: "amy@gmail.com",
+            role: "Manager",
+            salary: 100000
+        },{
+            name: "Jake",
+            mobile: 9852312345,
+            email: "jake@gmail.com",
+            role: "Salesman",
+            salary : 60000
+        },{
+            name: "Holt",
+            mobile: 9701294959,
+            email: "holt@gmail.com",
+            role: "Assistant Manager",
+            salary : 80000
+        },{
+            name: "Charles",
+            mobile: 9888822345,
+            email: "charles@gmail.com",
+            role: "Salesman",
+            salary: 58000
+        },{
+            name: "Gina",
+            mobile: 9285035960,
+            email: "gina@gmail.com",
+            role: "Assistant Salesman",
+            salary: 46500
+        }
+    ]
+)
+
+
+querying from staff collection 
+-------------------------------------
+db.staff.find().pretty()
+
+
+inserting into customers
+--------------------------------------
+db.customers.insertMany([
+    {
+        name: "Scott",
+        email: "scott@gmail.com",
+        mobile: 9020404589,
+        address: {
+            line: "First Line",
+            street: "Street 1",
+            city: "Scranton"
+        }
+    },{
+        name: "Beasly",
+        email: "beasly@gmail.com",
+        mobile: 9020403769,
+        address: {
+            line: "Second Line",
+            street: "Street 2",
+            city: "Scranton"
+        }
+    },{
+        name: "Kevin",
+        email: "kevin@gmail.com",
+        mobile: 9025554589,
+        address: {
+            line: "Third Line",
+            street: "Street 3",
+            city: "Scranton"
+        }
+    },{
+        name: "Terrance",
+        email: "terry@gmail.com",
+        mobile: 9090234589,
+        address: {
+            line: "First Line",
+            street: "Street 1",
+            city: "Brooklyn"
+        }
+    },{
+        name: "Rosa",
+        email: "rosa@gmail.com",
+        mobile: 9345304589,
+        address: {
+            line: "First Line",
+            street: "Street 5",
+            city: "Brooklyn"
+        }
+    },{
+        name: "Scully",
+        email: "scully@gmail.com",
+        mobile: 902041111,
+        address: {
+            line: "First Line",
+            street: "Street 8",
+            city: "Staten Island"
+        }
+    },{
+        name: "Hitchcock",
+        email: "cock@gmail.com",
+        mobile: 9555555555,
+        address: {
+            line: "First Line",
+            street: "Street 21",
+            city: "Brooklyn"
+        }
+    }
+])
+
+querying customers
+---------------------------
+db.customers.find().pretty()
+
+inserting into requested collection 
+------------------------------------
+db.requested.insertMany([
+    {
+        type: "dog",
+        breed: "pug",
+        color: "brown"
+    },{
+        type: "parrot",
+        color: "yellow"
+    },{
+        type: "cat",
+        color: "black"
+    }
+])
+
+querying requested
+-------------------------------------
+db.requested.find().pretty()
+
+inserting into available collection
+-------------------------------------
+db.available.insertMany([
+    {
+        name: "Tommy",
+        type: "dog",
+        breed: "Breed 1",
+        age: 5,
+        color: "brown",
+        condition: "good"
+    },{
+        name: "Gasby",
+        type: "dog",
+        breed: "Breed 2",
+        age: 3,
+        color: "white",
+        condition: "injured"
+    },{
+        name: "kitty",
+        type: "cat",
+        age: 7,
+        color: "grey",
+        condition: "good"
+    },{
+        name: "patty",
+        type: "parrot",
+        age: 2,
+        color: "green",
+        condition: "good"
+    }
+])
+
+querying available collection
+-----------------------------------------
+db.available.find().pretty()
+
+
+inserting into sold collection 
+----------------------------------------
+db.sold.insertMany([
+    {
+        pet_id: ObjectId("5f5b984f6f250721d0fab3be"),
+        sold_to : ObjectId("5f5b96316f250721d0fab3b7"),
+        sold_by: ObjectId("5f5b942f6f250721d0fab3b0"),
+        date : Date("2020-07-15")
+    },{
+        pet_id : ObjectId("5f5b984f6f250721d0fab3c1"),
+        sold_to : ObjectId("5f5b96316f250721d0fab3ba"),
+        sold_by: ObjectId("5f5b942f6f250721d0fab3b2"),
+        date: Date("2020-08-21")
+    }
+])
+
+querying sold collection
+------------------------------------------
+db.sold.find().pretty()
+
+
+updating requested collection
+------------------------------------------
+db.requested.update({
+    type: "dog"
+},{
+    $set: {
+        customer : ObjectId("5f5b96316f250721d0fab3b9")
+    }
+})
+
+db.requested.update({
+    type: "cat"
+},{
+    $set: {
+        customer : ObjectId("5f5b96316f250721d0fab3b6")
+    }
+})
+
+db.requested.update({
+    type: "parrot"
+},{
+    $set: {
+        customer : ObjectId("5f5b96316f250721d0fab3b4")
+    }
+})
