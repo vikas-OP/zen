@@ -1,0 +1,305 @@
+Creating collections
+---------------------------------------------------------
+
+> use zen_class
+switched to db zen_class
+> db.createCollection("students")
+{ "ok" : 1 }
+> db.createCollection("mentors")
+{ "ok" : 1 }
+> db.createCollection("attendance")
+{ "ok" : 1 }
+> db.createCollection("tasks")
+{ "ok" : 1 }
+> db.createCollection("courses")
+{ "ok" : 1 }
+> db.createCollection("codekata")
+{ "ok" : 1 }
+> db.createCollection("companyDrives")
+{ "ok" : 1 }
+> show collections
+attendance
+codekata
+companyDrives
+courses
+mentors
+students
+tasks
+
+
+
+Inserting into courses collection
+-------------------------------------------------------------
+
+db.courses.insertMany([
+    {
+        name: "HTML",
+        category: "FE",
+        author: "Venkat",
+        duration: 15
+    },{
+        name: "nodeJS",
+        category: "BE",
+        author: "RV",
+        duration: 25
+    },{
+        name: "SQL",
+        category: "DB",
+        author: "Arun",
+        duration: 10
+    }
+])
+
+
+getting all documents in courses collection 
+----------------------------------------------
+
+db.courses.find().pretty()
+
+
+inserting into mentors collection 
+---------------------------------------
+db.mentors.insertMany([{
+    name: "Venkat",
+    email: "venkat@gmail.com",
+    student_count: 10
+},{
+    name: "Ashwini",
+    email: "ashwini@gmail.com",
+    student_count: 8
+},{
+    name: "Ashok",
+    email: "ashok@gmail.com",
+    student_count: 9
+}
+])
+
+
+
+getting documents from mentors collection
+-------------------------------------------
+db.mentors.find().pretty()
+
+inserting into tasks collection
+-------------------------------------------
+db.tasks.insertMany([
+    {
+        name : "Minesweeper",
+        type : "Assessment",
+        given_date : Date("2020-08-14"),
+        deadline : Date("2020-08-15"),
+        url : "www.minesweeperdocs.com"
+    },{
+        name : "New York Times",
+        type : "Assignment",
+        given_date : Date("2020-08-20"),
+        deadline : Date("2020-08-21"),
+        url : "www.newyorktimesdocs.com"
+    },{
+        name : "Music Player",
+        type : "Assessment",
+        given_date : Date("2020-08-28"),
+        deadline : Date("2020-08-29"),
+        url : "www.musicplayerdocs.com"
+    }
+])
+
+
+getting documents from tasks collection 
+----------------------------------------
+db.tasks.find().pretty()
+
+
+inserting into codekata collection 
+----------------------------------------
+db.codekata.insertMany([
+    {
+        category: "Array",
+        ques_name : "Find Smallest",
+        ques_stat : "active"
+    },{
+        category: "Array",
+        ques_name : "Find Largest",
+        ques_stat : "active"
+    },{
+        category: "String",
+        ques_name : "Palindrome",
+        ques_stat : "active"
+    },{
+        category: "Numbers",
+        ques_name : "Find Factors",
+        ques_stat : "active"
+    },{
+        category: "Linked List",
+        ques_name : "Reverse Linked List",
+        ques_stat : "active"
+    }
+])
+
+
+getting documents from codekata collection
+--------------------------------------------
+db.codekata.find().pretty()
+
+
+inserting into companyDrives collection 
+--------------------------------------------
+db.companyDrives.insertMany([
+    {
+        name: "Amazon",
+        drive_date: Date("2020-10-25"),
+        JD: "Software Developer",
+        type: "IT"
+    },{
+        name: "Google",
+        drive_date: Date("2020-10-26"),
+        JD: "Data Analyst"
+    },{
+        name: "Uber",
+        drive_date: Date("2020-10-27"),
+        JD: "Full Stack Developer",
+        type: "IT"
+    }
+])
+
+
+getting documents from companyDrives collection
+--------------------------------------------------
+db.companyDrives.find().pretty()
+
+
+inserting into attendance collection
+--------------------------------------------------
+db.attendance.insertMany([
+    {
+        attendanceStatus : "P",
+        attendanceDate : Date("2020-08-01")
+    },{
+        attendanceStatus : "A",
+        attendanceDate : Date("2020-08-02")
+    },{
+        attendanceStatus : "P",
+        attendanceDate : Date("2020-08-03")
+    },{
+        attendanceStatus : "A",
+        attendanceDate : Date("2020-08-01")
+    },{
+        attendanceStatus : "P",
+        attendanceDate : Date("2020-08-02")
+    },{
+        attendanceStatus : "A",
+        attendanceDate : Date("2020-08-03")
+    },
+    {
+        attendanceStatus : "P",
+        attendanceDate : Date("2020-08-01")
+    },{
+        attendanceStatus : "P",
+        attendanceDate : Date("2020-08-02")
+    },{
+        attendanceStatus : "A",
+        attendanceDate : Date("2020-08-03")
+    }
+])
+
+
+getting documents from attendance collection 
+------------------------------------------------
+db.attendance.find().pretty()
+
+
+inserting into students collection 
+-----------------------------------------------
+db.students.insertMany([
+    {
+        name: "Vikas",
+        email: "vikas@gmail.com",
+        mobile : 9701796200,
+        dob: Date("1999-06-05"),
+        occupation: "none",
+        mentor : ObjectId("5f5a56935940136d4fc61df0"),
+        attendance : [ObjectId("5f5ad63c742f7cd5efb88e82"),
+                ObjectId("5f5ad63c742f7cd5efb88e83"),
+                ObjectId("5f5ad63c742f7cd5efb88e84")],
+        courses : [ObjectId("5f5a54715940136d4fc61dec"),
+                   ObjectId("5f5a54715940136d4fc61ded")],
+        eligible_companies : [ObjectId("5f5ad436742f7cd5efb88e7f"),
+                ObjectId("5f5ad436742f7cd5efb88e80")],
+        problems_solved_on_codekata : [ObjectId("5f5ad2a7742f7cd5efb88e7a"),
+                                        ObjectId("5f5ad2a7742f7cd5efb88e7b"),
+                                        ObjectId("5f5ad2a7742f7cd5efb88e7c")],
+        tasks : [{
+            task_id : ObjectId("5f5ad106742f7cd5efb88e77"),
+            github_url : "www.vikasgithub.com",
+            netlify_url : "www.vikasnetlify.com",
+            marks: 9
+        },{
+            task_id : ObjectId("5f5ad106742f7cd5efb88e78"),
+            github_url : "www.vikas1github.com",
+            netlify_url : "www.vikas1netlify.com",
+            marks: 8
+        },{
+            task_id : ObjectId("5f5ad106742f7cd5efb88e79"),
+            github_url : "www.vikas2github.com",
+            netlify_url : "www.vikas2netlify.com",
+            marks: 7
+        }]
+    },{
+        name: "Sid",
+        email: "sid@gmail.com",
+        mobile : 9701796233,
+        dob: Date("1999-08-14"),
+        occupation: "Web developer",
+        mentor : ObjectId("5f5a56935940136d4fc61def"),
+        attendance : [ObjectId("5f5ad63c742f7cd5efb88e85"),
+                ObjectId("5f5ad63c742f7cd5efb88e86"),
+                ObjectId("5f5ad63c742f7cd5efb88e87")],
+        courses : [ObjectId("5f5a54715940136d4fc61dec"),
+                   ObjectId("5f5a54715940136d4fc61deb")],
+        eligible_companies : [ObjectId("5f5ad436742f7cd5efb88e7f"),
+                ObjectId("5f5ad436742f7cd5efb88e80"),ObjectId("5f5ad436742f7cd5efb88e81")],
+        problems_solved_on_codekata : [ObjectId("5f5ad2a7742f7cd5efb88e7a"),
+                                        ObjectId("5f5ad2a7742f7cd5efb88e7d"),
+    ObjectId("5f5ad2a7742f7cd5efb88e7e")],
+        tasks : [{
+            task_id : ObjectId("5f5ad106742f7cd5efb88e77"),
+            github_url : "www.sidgithub.com",
+            netlify_url : "www.sidnetlify.com",
+            marks: 8
+        },{
+            task_id : ObjectId("5f5ad106742f7cd5efb88e78"),
+            github_url : "www.sid1github.com",
+            netlify_url : "www.sid1netlify.com",
+            marks: 10
+        }]
+    },{
+         name: "Tom",
+        email: "tom@gmail.com",
+        mobile : 8801796200,
+        dob: Date("1999-04-14"),
+        occupation: "UI Designer",
+        mentor : ObjectId("5f5a56935940136d4fc61dee"),
+        attendance : [ObjectId("5f5ad63c742f7cd5efb88e88"),
+                ObjectId("5f5ad63c742f7cd5efb88e89"),
+                ObjectId("5f5ad63c742f7cd5efb88e8a")],
+        courses : [ObjectId("5f5a54715940136d4fc61deb"),
+                   ObjectId("5f5a54715940136d4fc61ded")],
+        eligible_companies : [ObjectId("5f5ad436742f7cd5efb88e7f")],
+        problems_solved_on_codekata : [ObjectId("5f5ad2a7742f7cd5efb88e7a"),
+  ObjectId("5f5ad2a7742f7cd5efb88e7b"),
+  ObjectId("5f5ad2a7742f7cd5efb88e7c"),
+   ObjectId("5f5ad2a7742f7cd5efb88e7d"),
+    ObjectId("5f5ad2a7742f7cd5efb88e7e")],
+        tasks : [{
+            task_id : ObjectId("5f5ad106742f7cd5efb88e77"),
+            github_url : "www.tomgithub.com",
+            netlify_url : "www.tomnetlify.com",
+            marks: 10
+        }]
+    }
+])
+
+
+getting documents from students collection
+----------------------------------------------
+db.students.find().pretty()
