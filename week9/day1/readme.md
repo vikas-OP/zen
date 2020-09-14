@@ -1,3 +1,6 @@
 Basic file system sample server using NodeJS
 
-Heroku - https://nodejs-filesystem.herokuapp.com/
+End points -
+
+https://nodejs-filesystem.herokuapp.com/,
+https://nodejs-filesystem.herokuapp.com/files
