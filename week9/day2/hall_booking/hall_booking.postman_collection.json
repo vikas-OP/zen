@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "9facc3fa-a63a-4aa9-ad1f-407805175efe",
+		"name": "hall_booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "creating a room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"room 3\",\r\n    \"noOfSeats\": 80,\r\n    \"price\": 3000,\r\n    \"amenities\": [\"wifi\", \"hot tub\",\"dryer\",\"breakfast\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/rooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"rooms"
+					]
+				},
+				"description": "To create a room with name, noOfSeats"
+			},
+			"response": []
+		},
+		{
+			"name": "getting rooms ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/rooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"rooms"
+					]
+				},
+				"description": "fetching details of rooms, if they are booked or not if they are booked their booking details"
+			},
+			"response": []
+		},
+		{
+			"name": "booking rooms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_name\": \"lopez\",\r\n    \"date\": \"2018-03-29\",\r\n    \"startTime\": \"2018-03-29T05:50:00.000\",\r\n    \"endTime\": \"2018-03-29T06:40:00.000\",\r\n    \"roomID\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/rooms/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"rooms",
+						"book"
+					]
+				},
+				"description": "to book rooms"
+			},
+			"response": []
+		},
+		{
+			"name": "getting customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"customers"
+					]
+				},
+				"description": "fetching customer data who booked the hall"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
